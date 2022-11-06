@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
-struct MessageMeApp: App {
+struct ChatAppApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
